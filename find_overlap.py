@@ -14,6 +14,7 @@ def find_overlap(box1, box2):
     y1 = max(box1[1], box2[1])  # Max of the top edges
     x2 = min(box1[2], box2[2])  # Min of the right edges
     y2 = min(box1[3], box2[3])  # Min of the bottom edges
+    
 
     # Check if there is an overlap
     if x1 < x2 and y1 < y2:
