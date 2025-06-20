@@ -18,26 +18,18 @@ WEIGHT_PATH="/disk/repository/classification-model/cls_itg_pos_combined.pth.tar"
 Then execute the shell script to start 4 model server instances:
 
 ./start_server.sh
-'''
+```` 
 
 Step 2: Edit Configuration
 
 Edit example_config.yaml:
 
-    Ensure endpoint keys match those used in start_server.sh
+ 1.Ensure endpoint keys match those used in start_server.sh
 
-    Set values for:
-
-        start_date
-
-        end_date
-
-        project_id
-
-        exp_name
-
-        endpoint (based on the cluster you are trying to create)
+ 2.Set values for: [start_date , end_date ,project_id ,exp_name , endpoint (based on the cluster you are trying to create)]
 
 Run the clustering script with:
 
+```bash
 python main.py example_config.yaml
+````
