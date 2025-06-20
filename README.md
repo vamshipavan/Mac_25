@@ -18,6 +18,7 @@ WEIGHT_PATH="/disk/repository/classification-model/cls_itg_pos_combined.pth.tar"
 Then execute the shell script to start 4 model server instances:
 
 ./start_server.sh
+'''
 
 Step 2: Edit Configuration
 
