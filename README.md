@@ -10,7 +10,7 @@ Edit the `start_server.sh` file:
 
 Set the appropriate model paths based on whether you're using POS or Product classification:
 
-Example for POS:
+**Example for POS in `start_server.sh`:**
 ```bash
 LABELS_PATH="/disk/repository/classification-model/cls_itg_pos_combined.txt"
 WEIGHT_PATH="/disk/repository/classification-model/cls_itg_pos_combined.pth.tar"
@@ -18,13 +18,16 @@ WEIGHT_PATH="/disk/repository/classification-model/cls_itg_pos_combined.pth.tar"
 Then execute the shell script to start 4 model server instances:
 
 ./start_server.sh
-```` 
+````
 
-Step 2: Edit Configuration
+Step 2: Edit Configuration (example_config.yaml):
 
-Edit example_config.yaml:
+ Ensure the endpoint matches the model configuration used in start_server.sh
 
-Ensure the endpoint matches the model configuration used in start_server.sh
+**Example for POS in `example_config.yaml` :**
+ ```bash
+endpoint: "cls_itg_pos_combined"
+````
 
 Set values for the following fields:
 
@@ -37,6 +40,7 @@ Set values for the following fields:
     exp_name
 
     endpoint (based on the cluster you are trying to create: POS or Product)
+
 Run the clustering script with:
 
 ```bash
