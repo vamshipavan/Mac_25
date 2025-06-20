@@ -24,10 +24,19 @@ Step 2: Edit Configuration
 
 Edit example_config.yaml:
 
- 1.Ensure the endpoint matches the model configuration used in start_server.sh
+Ensure the endpoint matches the model configuration used in start_server.sh
 
- 2.Set values for: [start_date , end_date ,project_id ,exp_name , endpoint (based on the cluster you are trying to create (pos / product)]
+Set values for the following fields:
 
+    start_date
+
+    end_date
+
+    project_id
+
+    exp_name
+
+    endpoint (based on the cluster you are trying to create: POS or Product)
 Run the clustering script with:
 
 ```bash
